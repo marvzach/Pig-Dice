@@ -35,3 +35,36 @@
   font-family: 'Laila', serif;
   font-size: 15px;
 }
+.player2 {
+  display: none;
+}
+
+.player1win {
+  display: none;
+}
+
+.player2win {
+  display: none;
+}
+
+.messagePlayer1 {
+  display: none;
+}
+
+.messagePlayer2 {
+  display: none;
+  padding: 20px;
+}
+
+.hideform {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  border-color: #8B4513;
+  border-radius: 5px;
+
+}
