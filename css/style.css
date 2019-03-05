@@ -41,10 +41,12 @@
 
 .player1win {
   display: none;
+  color:red;
 }
 
 .player2win {
   display: none;
+  color:red;
 }
 
 .messagePlayer1 {
