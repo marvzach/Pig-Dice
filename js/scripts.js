@@ -60,3 +60,18 @@ $(function() {
       $(".twoDiceroll").text(player2RolledNumber);
       $(".twoCurrentscore").text(player2.turnScore);
     });
+    $("button#onedice-hold").click(function(event) {
+      event.preventDefault();
+      player1.score();
+      $(".Player1Overal").text(player1.totalScore);
+      $(".oneDiceroll").text("");
+      $(".oneCurrentscore").text("");
+      if (player1.totalScore >= 100) {
+        $(".dicegame").hide();
+        $(".player1win").show();
+      } else {
+      $(".player1").hide();
+      $(".player2").show();
+      $(".messagePlayer2").hide();
+      }
+    });
