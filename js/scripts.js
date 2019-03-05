@@ -70,25 +70,25 @@ $(function() {
         $(".dicegame").hide();
         $(".player1win").show();
       } else {
-      $(".player1").hide();
-      $(".player2").show();
-      $(".messagePlayer2").hide();
+        $(".player1").hide();
+        $(".player2").show();
+        $(".messagePlayer2").hide();
       }
     });
     $("button#twodice-hold").click(function(event) {
-     event.preventDefault();
-     player2.score();
-     $(".Player2Overal").text(player2.totalScore);
-     $(".twoDiceroll").text("");
-     $(".twoCurrentscore").text("");
-     if (player2.totalScore >= 100) {
-       $(".dicegame").hide();
-       $(".player2win").show();
-     } else {
-     $(".player1").show();
-     $(".player2").hide();
-     $(".messagePlayer1").hide();
-     }
-   });
- });
+      event.preventDefault();
+      player2.score();
+      $(".Player2Overal").text(player2.totalScore);
+      $(".twoDiceroll").text("");
+      $(".twoCurrentscore").text("");
+      if (player2.totalScore >= 100) {
+        $(".dicegame").hide();
+        $(".player2win").show();
+      } else {
+        $(".player1").show();
+        $(".player2").hide();
+        $(".messagePlayer1").hide();
+      }
+    });
+  });
 });
