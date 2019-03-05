@@ -12,3 +12,7 @@ Player.prototype.roll = function() {
   };
   return rollValue;
 }
+Player.prototype.score = function() {
+  this.totalScore = this.turnScore + this.totalScore;
+  this.turnScore = 0;
+}
