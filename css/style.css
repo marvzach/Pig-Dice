@@ -68,3 +68,68 @@
   border-radius: 5px;
 
 }
+.rules  {
+  width: 100%;
+  padding: 10px;
+  background-color: #8B4513;
+  color: white;
+  border-color: #8B4513;
+  border-radius: 25px;
+  text-align:center;
+}
+
+#form{
+  background-image: url('../images/lo.jpg');
+  width: 390px;
+  height: 640px;
+  margin-left: 430px;
+  margin-top: 0px;
+  padding: 0px;
+  position: relative;
+  z-index:2;
+  border-radius: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+input[type=text] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid grey;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-left: 60px;
+  width: 220px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+input:focus{
+  background-color: white;
+  width: 250px;
+  color: #53e3a6;
+}
+input{
+  float: left;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  transition-duration: 0.25s;
+  font-weight: 300;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+button {
+  background-color: #098A82;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  width: 150px;
+  border-radius: 5px;
+  height: 40px;
+  margin: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
