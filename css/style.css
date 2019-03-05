@@ -41,14 +41,17 @@
 
 .player1win {
   display: none;
+  color:red;
 }
 
 .player2win {
   display: none;
+  color:red;
 }
 
 .messagePlayer1 {
   display: none;
+  padding: 20px;
 }
 
 .messagePlayer2 {
