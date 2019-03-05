@@ -45,3 +45,18 @@ $(function() {
       $(".oneCurrentscore").text(player1.turnScore);
       $(".messagePlayer2").hide();
     });
+    $(".player2-name").text(player2.playerName);
+    $(".Player2Overal").html("<span class='Player2Overal'>" + player2.totalScore + "</span>");
+
+    $("button#twodice-roll").click(function(event) {
+      event.preventDefault();
+      var player2RolledNumber = player2.roll();
+      if (player2RolledNumber === 1) {
+        $(".player2").hide();
+        $(".player1").show();
+        $(".messagePlayer2").show();
+        $(".messagePlayer1").hide();
+      }
+      $(".twoDiceroll").text(player2RolledNumber);
+      $(".twoCurrentscore").text(player2.turnScore);
+    });
