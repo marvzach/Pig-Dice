@@ -3,3 +3,12 @@ function Player(playerName, turnScore, totalScore) {
   this.turnScore = turnScore;
   this.totalScore = totalScore;
 }
+Player.prototype.roll = function() {
+  var rollValue = Math.floor(Math.random() * 6) ;
+  if (rollValue === 1) {
+    this.turnScore = 0;
+  } else {
+    this.turnScore = this.turnScore + rollValue;
+  };
+  return rollValue;
+}
